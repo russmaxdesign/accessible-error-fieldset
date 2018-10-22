@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Method 4: aria-describedby attribute applied to all input elements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Method 4: <code>aria-describedby</code> attribute applied to all <code>&lt;input&gt;</code> elements</h1>
+    <p><a href="index.html">Back to index page</a></p>
+
+    <h2>Example</h2>
+    <form action="#">
+      <fieldset>
+        <legend>Choose a fruit</legend>
+        <ul class="form-list">
+          <li>
+            <input type="radio" id="apple" name="fruit" aria-describedby="d4">
+            <label class="form-label" for="apple">Apple</label>
+          </li>
+          <li>
+            <input type="radio" id="pear" name="fruit" aria-describedby="d4">
+            <label class="form-label" for="pear">Pear</label>
+          </li>
+          <li>
+            <input type="radio" id="bannana" name="fruit" aria-describedby="d4">
+            <label class="form-label" for="bannana">Banana</label>
+          </li>
+        </ul>
+        <p class="error" id="d4">Error: At least one option must be chosen</p>
+      </fieldset>
+    </form>
+
+    <h2>Code</h2>
+    <figure>
+<pre><code class="language-markup">&lt;fieldset&gt;
+  &lt;legend&gt;Choose a fruit&lt;/legend&gt;
+  &lt;ul class="form-list"&gt;
+    &lt;li&gt;
+      &lt;input type="radio" id="apple" name="fruit" aria-describedby="d4"&gt;
+      &lt;label class="form-label" for="apple"&gt;Apple&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="radio" id="pear" name="fruit" aria-describedby="d4"&gt;
+      &lt;label class="form-label" for="pear"&gt;Pear&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="radio" id="bannana" name="fruit" aria-describedby="d4"&gt;
+      &lt;label class="form-label" for="bannana"&gt;Banana&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p class="error" id="d4"&gt;Error: At least one option must be chosen&lt;/p&gt;
+&lt;/fieldset&gt;
+</code></pre>
+    </figure>
+
+    <p><a href="index.html">Back to index page</a></p>
+  </div>
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

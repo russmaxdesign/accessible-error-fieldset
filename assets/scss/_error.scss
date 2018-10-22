@@ -1,0 +1,18 @@
+.form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.error {
+  margin: .5em 0 0;
+  color: red;
+}
+
+.pass {
+  background: rgba(0,255,0,.3);
+}
+
+.fail {
+  background: rgba(255,0,0,.3);
+}

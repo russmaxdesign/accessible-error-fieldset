@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Accessible inline error message associated with fieldset and radio buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Accessible inline error message associated with fieldset and radio buttons</h1>
+    <p><a href="https://github.com/russmaxdesign/accessible-error-fieldset">Github Page</a></p>
+
+    <h2>Methods</h2>
+    <p>The following methods have been used to programmatically associated the error message with the radio buttons within a <code>&lt;fieldset&gt;</code>:</p>
+    <ul>
+      <li><a href="method1.html"><b>Method 1</b>: no programmatic association</a></li>
+      <li><a href="method2.html"><b>Method 2</b>: <code>aria-describedby</code> attribute applied to the <code>&lt;fieldset&gt;</code> element</a></li>
+      <li><a href="method3.html"><b>Method 3</b>: <code>aria-describedby</code> attribute applied to the <code>&lt;legend&gt;</code> element</a></li>
+      <li><a href="method4.html"><b>Method 4</b>: <code>aria-describedby</code> attribute applied to all <code>&lt;input&gt;</code> elements</a></li>
+    </ul>
+    <hr>
+
+    <h2>Tests</h2>
+    <p>The following tests are to determine if the error message is programmatically associated with the radio buttons within a <code>&lt;fieldset&gt;</code>:</p>
+    <ul>
+      <li><b>Test 1</b>: The error message is announced with first unchecked radio button when it receives focus (when travelling forward through the form)</li>
+      <li><b>Test 2</b>: The error message is announced with last unchecked radio button label when it receives focus (when travelling backwards through the form)</li>
+      <li><b>Test 3</b>: The error message is announced with a checked radio button when it receives focus (when travelling forward through the form)</li>
+      <li><b>Test 4</b>: The error message is announced with a checked radio button when it receives focus (when travelling backwards through the form)</li>
+    </ul>
+    <p>A PASS equals passing all four tests above.</p>
+    <hr>
+
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Combination</th>
+          <th>Method 1</th>
+          <th>Method 2</th>
+          <th>Method 3</th>
+          <th>Method 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>VoiceOver &amp; Chrome</th>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>VoiceOver &amp; Firefox</th>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+        </tr>
+        <tr>
+          <th>VoiceOver &amp; Safari</th>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>NVDA &amp; Chrome</th>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>NVDA &amp; FireFox</th>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>NVDA &amp; Edge</th>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+        </tr>
+        <tr>
+          <th>JAWS &amp; Chrome</th>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>JAWS &amp; FireFox</th>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+        <tr>
+          <th>JAWS &amp; Edge</th>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="fail">Fail</td>
+          <td class="pass">Pass</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 2em;"><a href="https://github.com/russmaxdesign/accessible-error-fieldset">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
